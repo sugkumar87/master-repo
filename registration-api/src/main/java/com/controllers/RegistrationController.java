@@ -20,8 +20,8 @@ import com.models.User;
 import com.service.UserService;
 
 @RestController
-@RequestMapping(value="/user", consumes= MediaType.APPLICATION_JSON_VALUE, produces= MediaType.APPLICATION_JSON_VALUE)
-
+//@RequestMapping(value="/user", consumes= MediaType.APPLICATION_JSON_VALUE, produces= MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value="/user")
 public class RegistrationController {
 	
 	@Autowired
@@ -45,7 +45,7 @@ public class RegistrationController {
 	}
 	
 	@RequestMapping(value="/get/{id}", method=RequestMethod.GET)
-	public User getUsers(@PathVariable("id") long userId){
+	public User getUser(@PathVariable("id") long userId){
 		return userService.getUser(userId);
 	}
 	

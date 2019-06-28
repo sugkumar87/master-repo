@@ -1,0 +1,20 @@
+body {
+	background-color: blue;
+}
+
+.panelGridCenter {
+	margin: 0 auto;
+	height: 800px;
+	background-color: white;
+}
+
+.headerImage {
+	width: 80%;
+}
+
+
+.footerImage {
+	width: 80%;
+}
+
+
